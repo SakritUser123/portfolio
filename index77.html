@@ -1,0 +1,1122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakthi Prabhurajan - Student Portfolio</title>
+    <link rel="stylesheet" href="styles.css?v=1.6">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Cache buster: 2026-01-18-v5 -->
+</head>
+<body>
+    <!-- View Toggle -->
+    <div id="view-toggle" class="view-toggle">
+        <button class="toggle-btn active" data-view="portfolio">👤 Portfolio</button>
+        <button class="toggle-btn" data-view="resume">📄 Resume</button>
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">
+            <span class="sun-icon">☀️</span>
+            <span class="moon-icon">🌙</span>
+        </button>
+    </div>
+
+    <!-- Portfolio View -->
+    <div id="portfolio-view" class="view-container active">
+        <!-- Navigation -->
+        <nav id="navbar">
+            <div class="nav-container">
+                <a href="https://www.linkedin.com/in/sakthi-prasanna-5a726828b/" target="_blank" class="nav-brand">Sakthi Prabhurajan</a>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="nav-links" id="nav-links">
+                    <a href="#about">About</a>
+                    <a href="#education">Education</a>
+                    <a href="#honors">Honors</a>
+                    <a href="#awards">Awards</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#internships">Internships</a>
+                    <a href="#endorsements">Endorsements</a>
+                    <a href="#certificates">Certificates</a>
+                    <a href="#activities">Activities</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="profile-picture">
+                    <img src="images/sakthi Headshot.png" alt="Sakthi Prabhurajan" />
+                </div>
+                <div class="hero-text">
+                    <h1 class="hero-title">Hi, I'm sakthi!</h1>
+                    <p class="hero-subtitle">High School Student | Tech Enthusiast | Active Learner</p>
+                    <p class="hero-location">📍 Lambert High School, Suwanee, GA | Class of 2027</p>
+                </div>
+                <div class="hero-social-links">
+                    <a href="https://medium.com/@sakthi.prasan" target="_blank" class="social-link" aria-label="Medium">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/>
+                        </svg>
+                        <span>Medium</span>
+                    </a>
+                    <a href="https://github.com/aksprasan" target="_blank" class="social-link" aria-label="GitHub">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://gitlab.com/sakthi.prasan" target="_blank" class="social-link" aria-label="GitLab">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M23.546 10.93L13.067.452c-.604-.603-1.582-.603-2.188 0L8.708 2.627l2.76 2.76c.645-.215 1.379-.07 1.889.441.516.515.658 1.258.428 1.9l2.658 2.66c.645-.23 1.387-.096 1.9.428.717.717.717 1.88 0 2.598-.719.719-1.881.719-2.598 0-.539-.541-.674-1.337-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348.713.721.713 1.883 0 2.598-.719.719-1.881.719-2.598 0-.719-.719-.719-1.879 0-2.598.182-.18.387-.316.605-.406V8.835c-.217-.091-.424-.222-.605-.406-.545-.545-.676-1.342-.396-2.009L7.636 3.7.45 10.881c-.6.605-.6 1.584 0 2.189l10.48 10.477c.604.604 1.582.604 2.186 0l10.43-10.43c.605-.603.605-1.582 0-2.187"/>
+                        </svg>
+                        <span>GitLab</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sakthi-prasanna-5a726828b/" target="_blank" class="social-link" aria-label="LinkedIn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="#contact" class="social-link" aria-label="Contact">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                        <span>Let's Connect</span>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-category">
+                        <h4 class="stat-category-title">💻 Technical & Competition</h4>
+                        <div class="stat-row">
+                            <div class="stat">
+                                <div class="stat-number">Co-Author</div>
+                                <div class="stat-label">Research Paper (ISMB 2026)</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">World</div>
+                                <div class="stat-label">Championship Qualifier</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">Top 20</div>
+                                <div class="stat-label">International Hackathon</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">300+</div>
+                                <div class="stat-label">GitHub Contributions</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">17</div>
+                                <div class="stat-label">Articles Published</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-category">
+                        <h4 class="stat-category-title">🎯 Leadership & Involvement</h4>
+                        <div class="stat-row">
+                            <div class="stat">
+                                <div class="stat-number">2</div>
+                                <div class="stat-label">President Positions</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">3</div>
+                                <div class="stat-label">Officer Positions</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">3</div>
+                                <div class="stat-label">Judge Appointments</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-category">
+                        <h4 class="stat-category-title">🏆 Recognition</h4>
+                        <div class="stat-row">
+                            <div class="stat">
+                                <div class="stat-number">18</div>
+                                <div class="stat-label">Awards Won</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">5+</div>
+                                <div class="stat-label">Hackathons Competed</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">3+</div>
+                                <div class="stat-label">Websites Launched</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-category">
+                        <h4 class="stat-category-title">🌍 Impact & Service</h4>
+                        <div class="stat-row">
+                            <div class="stat">
+                                <div class="stat-number">300+</div>
+                                <div class="stat-label">Volunteer Hours</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">$1,500</div>
+                                <div class="stat-label">Raised for Children</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">40+</div>
+                                <div class="stat-label">Students Mentored</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p class="lead">🎓 High school junior passionate about technology, robotics, and making a difference!</p>
+                <p>Hey there! I'm a junior at Lambert High School who loves building cool stuff with code. Whether it's programming robots for FIRST Robotics competitions, creating AI projects, or competing in hackathons, I'm always excited to learn and create.</p>
+                <p>When I'm not coding, you'll find me volunteering with VT Seva (300+ hours!), mentoring younger students in robotics, or playing piano. I believe technology should be used to help people and make the world a better place. 🌍✨</p>
+                <p>Currently exploring AI/ML, working on depression chatbot projects, and always looking for the next challenge!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-grid">
+                <div class="education-card">
+                    <h3>🎓 <a href="https://lhs.forsyth.k12.ga.us/" target="_blank">Lambert High School</a></h3>
+                    <p class="school-info">Suwanee, GA | Class of 2027</p>
+                </div>
+                <div class="education-card">
+                    <h3>📐 <a href="https://www.mathschool.com/about" target="_blank">Russian School of Math</a></h3>
+                    <p class="school-info">2022 – Present | Advanced mathematics (2 years ahead)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Honors & Leadership Section -->
+    <section id="honors" class="section">
+        <div class="container">
+            <h2 class="section-title">Honors & Leadership</h2>
+            <div class="honors-grid">
+                <div class="honor-card">
+                    <div class="honor-icon">📄</div>
+                    <h3>Research Paper Co-Author</h3>
+                    <p>ISMB 2026 Conference</p>
+                </div>
+                <div class="honor-card">
+                    <div class="honor-icon">🌍</div>
+                    <h3>FIRST Robotics</h3>
+                    <p>World Championship Qualifier (2024)</p>
+                </div>
+                <div class="honor-card">
+                    <div class="honor-icon">🤖</div>
+                    <h3>Robotics Team Officer</h3>
+                    <p>Strategy and Analytics Officer</p>
+                </div>
+                <div class="honor-card">
+                    <div class="honor-icon">🎯</div>
+                    <h3>Technology Student Association (TSA)</h3>
+                    <p>Lambert TSA Chapter President</p>
+                </div>
+                <div class="honor-card">
+                    <div class="honor-icon">👁️</div>
+                    <h3>Lambert VT SEVA</h3>
+                    <p>Vice President (2025-Present)</p>
+                </div>
+                <div class="honor-card">
+                    <div class="honor-icon">🔬</div>
+                    <h3>Rec Stem</h3>
+                    <p>Junior Officer (2025-Present)</p>
+                </div>
+                <div class="honor-card">
+                    <div class="honor-icon">🚀</div>
+                    <h3>DayDream Hackathon</h3>
+                    <p>Led and organized hackathon with 150+ participants</p>
+                </div>
+                <div class="honor-card">
+                    <div class="honor-icon">⚖️</div>
+                    <h3>State-Level Debate Judge</h3>
+                    <p>3 official varsity tournaments (2024)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section id="awards" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Awards & Achievements</h2>
+            <div class="awards-grid">
+                <div class="award-item">
+                    <h4>🥉 President's Volunteer Service Award - Bronze</h4>
+                    <p>National Recognition (2025)</p>
+                </div>
+                <div class="award-item">
+                    <h4>🏆 President's Volunteer Service Award - Gold</h4>
+                    <p>National Recognition (2024)</p>
+                </div>
+                <div class="award-item">
+                    <h4>🎨 Creativity Award</h4>
+                    <p>District Championship, Robotics (2026)</p>
+                </div>
+                <div class="award-item">
+                    <h4>🤝 Team Spirit Award</h4>
+                    <p>District Championship, Robotics (2026)</p>
+                </div>
+                <div class="award-item">
+                    <h4>🎮 Innovation in Control Award</h4>
+                    <p>District Championship, Robotics (2026)</p>
+                </div>
+                <div class="award-item">
+                    <h4>🎮 Innovation in Control Award</h4>
+                    <p>State Championship, Robotics (2026)</p>
+                </div>
+                <div class="award-item">
+                    <h4>🏗️ Industrial Design Award</h4>
+                    <p>District Championship, Robotics (2025)</p>
+                </div>
+                <div class="award-item">
+                    <h4>⚙️ Excellence in Engineering Award</h4>
+                    <p>District Championship, Robotics (2025)</p>
+                </div>
+                <div class="award-item">
+                    <h4>🥇 Rookie All-Star Award</h4>
+                    <p>State Championship, Robotics (2024)</p>
+                </div>
+                <div class="award-item">
+                    <h4>⭐ Rookie Inspiration Award</h4>
+                    <p>District Championship, Robotics (2024)</p>
+                </div>
+                <div class="award-item">
+                    <h4>🌐 Technology Student Association (TSA) State Finalist</h4>
+                    <p>WebMaster - 5th Place (2026)</p>
+                </div>
+                <div class="award-item">
+                    <h4>🎵 Technology Student Association (TSA) State Top 10</h4>
+                    <p>Music Production & Robotics (2025)</p>
+                </div>
+                <div class="award-item">
+                    <h4>🏎️ Technology Student Association (TSA) 4th Place</h4>
+                    <p>Gravity Car Challenge (2024)</p>
+                </div>
+                <div class="award-item">
+                    <h4>🐭 Technology Student Association (TSA) Top 10</h4>
+                    <p>Mouse Trap Car Racing (2022)</p>
+                </div>
+                <div class="award-item">
+                    <h4>💻 USACO 2026</h4>
+                    <p>Rank 1232 among 34,135 pre-college participants (Score: 861)</p>
+                </div>
+                <div class="award-item">
+                    <h4>🏅 Top 20 Placement</h4>
+                    <p>Undercity Global Hackathon (2025)</p>
+                </div>
+                <div class="award-item">
+                    <h4>🏆 Top 5 Placement</h4>
+                    <p>Regional Hackathons (2023 & 2024)</p>
+                </div>
+                <div class="award-item">
+                    <h4>🎤 6th Place</h4>
+                    <p>Regional Debate Competition (2024)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Technical Experience</h2>
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <h3>🐍 Python Programming & AI</h3>
+                    <p class="experience-period">2023 – Present</p>
+                    <ul>
+                        <li>Completed full-year Python course in <a href="https://codemode.us/" target="_blank">CodeMode</a>; AI self-study</li>
+                        <li>Consistent <a href="https://github.com/aksprasan" target="_blank">GitHub</a> & <a href="https://gitlab.com/sakthi.prasan" target="_blank">GitLab</a> contributor with 300+ contributions, built and maintained 20+ projects</li>
+                        <li>Continuously exploring emerging tech and AI, published 17 technical articles on <a href="https://medium.com/@sakthi.prasan" target="_blank">Medium</a></li>
+                    </ul>
+                </div>
+                <div class="experience-card">
+                    <h3>🤖 <a href="https://frc-events.firstinspires.org/team/9477" target="_blank">FRC Robotics Team</a></h3>
+                    <p class="experience-period">Analytics Officer (2023–Present)</p>
+                    <ul>
+                        <li>Competed in District, Regional, and World Championships</li>
+                        <li>Advanced to World Championships in 2024</li>
+                        <li>Advanced to Regionals quarterfinals (9th place out of 72) in 2025</li>
+                        <li>Advanced to Regionals semifinals and state level (8th place out of 75) in 2026</li>
+                        <li>Led data analytics strategy to track performance metrics and optimize robot efficiency, analyzing data from 100+ competing teams</li>
+                    </ul>
+                </div>
+                <div class="experience-card">
+                    <h3>🎯 <a href="https://lhs.forsyth.k12.ga.us/extracurricular/clubs-activities" target="_blank">Technology Student Association (TSA)</a></h3>
+                    <p class="experience-period">Lambert TSA Chapter President</p>
+                    <ul>
+                        <li>Grew active membership by 40% through recruitment and outreach</li>
+                        <li>Leading recruitment initiatives and maintaining membership records</li>
+                        <li>Engineered solutions and competed in STEM design, production, and innovation challenges at state and regional levels</li>
+                    </ul>
+                </div>
+                <div class="experience-card">
+                    <h3>💻 <a href="https://hackclub.com/" target="_blank">HackClub</a></h3>
+                    <p class="experience-period">2023 – Present</p>
+                    <ul>
+                        <li>Competed in over 5 hackathons</li>
+                        <li>Led and executed the 2-day <a href="https://daydream.hackclub.com/" target="_blank">DayDream Hackathon</a> at Georgia Tech for 150+ participants, managing end-to-end planning, marketing, and logistics</li>
+                        <li>Ranked Top 20 out of 500+ participants at the 3-day <a href="https://highway.hackclub.com/getting-started/overview" target="_blank">Undercity Global Hackathon</a> hosted by <a href="https://hackclub.com/" target="_blank">HackClub</a> at GitHub HQ, San Francisco</li>
+                    </ul>
+                </div>
+                <div class="experience-card">
+                    <h3>💼 <a href="https://lhs.forsyth.k12.ga.us/extracurricular/clubs-activities" target="_blank">Future Business Leaders of America (FBLA)</a></h3>
+                    <p class="experience-period">2021 – Present</p>
+                    <ul>
+                        <li>Active member for 5+ years, consistently participating in leadership and competitive events</li>
+                        <li>Competed in multiple competitions across Code Development, Data Analysis, and Website Design</li>
+                        <li>Developed and executed projects combining coding, data insights, and design, demonstrating innovation and teamwork</li>
+                    </ul>
+                </div>
+                <div class="experience-card">
+                    <h3>🔬 <a href="https://lhs.forsyth.k12.ga.us/extracurricular/clubs-activities" target="_blank">Science Olympiad</a></h3>
+                    <p class="experience-period">Active Member</p>
+                    <ul>
+                        <li>Competed in 5+ STEM events, including Code Analysis, Code Busters, Astronomy, Entomology, and Chemistry</li>
+                        <li>Participated in regional and invitational competitions</li>
+                    </ul>
+                </div>
+                <div class="experience-card">
+                    <h3>🌐 <a href="https://aksprasan.github.io/portfolio/index.html" target="_blank">Personal Portfolio Website Development</a></h3>
+                    <p class="experience-period">2025 – Present</p>
+                    <ul>
+                        <li>Designed and developed comprehensive personal portfolio website featuring responsive design, interactive elements, and integrated resume/common app views</li>
+                        <li>Built using HTML5, CSS3, and JavaScript with modern UI/UX principles</li>
+                        <li>Implemented dual-view system (portfolio/resume), dark/light theme toggle, and mobile-responsive navigation</li>
+                        <li>Deployed via GitHub Pages with version control and continuous updates</li>
+                        <li>Showcases technical projects, endorsements, achievements, and professional experience with clean, accessible design</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internships & Volunteering Section -->
+    <section id="internships" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Internships & Volunteering</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Gen AI Research Internship</h3>
+                        <p class="role-title">Summer 2025 - Present</p>
+                        <ul>
+                            <li>Worked under <a href="https://www.linkedin.com/in/ashwin-ashok-12820841/" target="_blank">Prof. Ashwin Ashok</a> at <a href="https://cas.gsu.edu/profile/ashwin-ashok/" target="_blank">Georgia State University</a> to create AI/ML projects</li>
+                            <li><strong>Developed AI-powered mental health chatbot</strong> to provide support for individuals with depression and students at risk of suicidal thoughts, offering accessible coping strategies and resources</li>
+                            <li>Demonstrated the chatbot to doctors and psychiatrists, incorporated their professional feedback, and iteratively refined the tool to maximize clinical effectiveness and user support</li>
+                            <li>Designed conversational AI system to recognize distress signals and provide appropriate mental health resources and crisis intervention guidance</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Website Development Intern</h3>
+                        <p class="role-title"><a href="https://alserlab.github.io/" target="_blank">Alser Lab</a> | Summer 2025 - Present</p>
+                        <ul>
+                            <li>Worked under <a href="https://www.linkedin.com/in/mealser/" target="_blank">Prof. Mohammed Alser</a> at <a href="https://cas.gsu.edu/profile/mohammed-alser/" target="_blank">Georgia State University</a></li>
+                            <li>Entrusted with improvements and enhancements of official Alser Lab website, handling responsibility with professionalism and exceptional attention to detail</li>
+                            <li>Contributed 50+ hours coding and debugging to enhance Alser Lab's digital platforms</li>
+                            <li>Designed, developed, and launched 3+ client-facing websites, delivering functional, user-friendly solutions</li>
+                            <li>Part of 300+ total contributions across GitHub repositories demonstrating consistent technical collaboration</li>
+                            <li>Progressed from foundational learning in HTML, CSS, and web development to building multiple functional websites with confidence and precision</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>ISMB (Intelligent Systems for Molecular Biology) Research Project - FASTR</h3>
+                        <p class="role-title">2025 - Present</p>
+                        <ul>
+                            <li>Worked under <a href="https://www.linkedin.com/in/mealser/" target="_blank">Professor Mohammed Alser</a> at <a href="https://cas.gsu.edu/profile/mohammed-alser/" target="_blank">Georgia State University</a> to contribute to FASTR Project</li>
+                            <li><strong>Co-author in a research paper that describes a new file format, called FASTR, for genomic data</strong> submitted to ISMB 2026 (Intelligent Systems for Molecular Biology), a premier international conference in computational biology and bioinformatics organized by the International Society for Computational Biology (ISCB)</li>
+                            <li>Built online platform for supporting encoding/decoding operations on DNA and RNA representation, requiring technical accuracy, creative problem-solving, and ability to work with complex scientific data</li>
+                            <li>Contributed to web-based tools to support project functionality</li>
+                            <li>Assisted in translating technical concepts into accessible website components</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Python Tutor</h3>
+                        <p class="role-title"><a href="https://codemode.us/" target="_blank">CodeMode</a> | Summer 2024</p>
+                        <ul>
+                            <li>Tutored beginners in core Python programming concepts</li>
+                            <li>Created instructional materials and guided Q&A/debugging sessions</li>
+                            <li>Mentored students through projects</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>SAT/ACT Prep Intern</h3>
+                        <p class="role-title"><a href="https://highscores.ai/" target="_blank">HighScores</a> | Summer 2024</p>
+                        <ul>
+                            <li>Reviewed test materials; tutored students on Math and English Skills</li>
+                            <li>Worked daily on fixing practice tests for students</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3><a href="https://www.vtsworld.org/branch/atlanta" target="_blank">VT Seva</a> Volunteer</h3>
+                        <p class="role-title">Vice President | 300+ hours | 2024 – Present</p>
+                        <ul>
+                            <li><strong>Awarded President's Volunteer Service Award - Gold Level (2024) and Bronze Level (2025)</strong> for sustained volunteer service totaling 100+ hours each year</li>
+                            <li>Volunteered 200+ hours supporting visually impaired children at Nethra Vidyalay, India</li>
+                            <li>Organized 45+ events, including road cleanups, food service, assisting senior homes and senior citizens, school support, bird house projects, and multiple fundraising initiatives</li>
+                            <li>Led a campaign requiring $1/day per child, successfully raising $1,500 to provide food, clothing, shelter, and education for 4 visually impaired children for an entire year</li>
+                            <li><strong>Converted 50+ PDFs into Braille-compatible formats</strong> over 100+ hours; developed semi-automated conversion process that reduced processing time from 2-3 hours per book to under 1 hour, significantly improving accessibility resource production efficiency</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3><a href="https://www.vtsworld.org/post/vt-seva-atlanta-books-for-africa" target="_blank">Books for Africa Project</a></h3>
+                        <p class="role-title">2024 - Present</p>
+                        <ul>
+                            <li>Packaged and donated 250+ books and notebooks to underserved students in Africa, expanding access to educational resources</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3><a href="https://www.myeyelevel.com/US/center/cummingsouth" target="_blank">Eye Level</a></h3>
+                        <p class="role-title">30+ hours | Summer 2025</p>
+                        <ul>
+                            <li>Tutored students in Math, English, and Writing</li>
+                            <li>Graded and recorded 200+ booklets for students</li>
+                            <li>Helped with center maintenance and organization</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3><a href="https://www.dreamerszone.org/about" target="_blank">DreamerZone Robotics</a></h3>
+                        <p class="role-title">20+ hours | 2025 - Present</p>
+                        <ul>
+                            <li>Mentored 40+ middle school students to build and program a vex robot</li>
+                            <li>Counseled them through autonomous programming, mechanical design, and debugging</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Endorsements Section -->
+    <section id="endorsements" class="section">
+        <div class="container">
+            <h2 class="section-title">Endorsements</h2>
+            <p class="section-intro">Official endorsements from my internships and work experiences.</p>
+            <div class="endorsements-grid">
+                <div class="endorsement-card">
+                    <div class="endorsement-preview">
+                        <img src="docs/president_award.jpeg" alt="President's Volunteer Service Award" />
+                    </div>
+                    <div class="endorsement-info">
+                        <h3>🏆 President's Volunteer Service Award</h3>
+                        <p>Gold Level - National Recognition</p>
+                        <p class="endorsement-details">300+ volunteer hours | 2024</p>
+                        <a href="https://drive.google.com/file/d/1LOXW7ovJY8stv6_o_kBKZkTxx6l71pdv/view?usp=sharing" target="_blank" class="endorsement-link">View Endorsement →</a>
+                    </div>
+                </div>
+                <div class="endorsement-card">
+                    <div class="endorsement-preview">
+                        <img src="docs/alser.png" alt="Alser Lab Certificate" />
+                    </div>
+                    <div class="endorsement-info">
+                        <h3>🔬 Alser Lab Internship</h3>
+                        <p>Website Development Intern & ISMB Research Contributor at Georgia State University</p>
+                        <p class="endorsement-details">Summer 2025 STEM/View High School Internship Program</p>
+                        <a href="https://drive.google.com/file/d/1HkmCUO2IsYVlWa3yDt8-18Mo2d5zisru/view?usp=sharing" target="_blank" class="endorsement-link">View Endorsement →</a>
+                    </div>
+                </div>
+                <div class="endorsement-card">
+                    <div class="endorsement-preview">
+                        <iframe src="docs/eyelevel.pdf" title="Eye Level Certificate"></iframe>
+                    </div>
+                    <div class="endorsement-info">
+                        <h3>📚 Eye Level Learning Center</h3>
+                        <p>Tutor - Math, English, and Writing</p>
+                        <p class="endorsement-details">30+ hours | Summer 2025</p>
+                        <a href="https://drive.google.com/file/d/1RngkzG4pGyWiWSM0_IHjZN6SCKgpdqMi/view?usp=sharing" target="_blank" class="endorsement-link">View Endorsement →</a>
+                    </div>
+                </div>
+                <div class="endorsement-card">
+                    <div class="endorsement-preview">
+                        <iframe src="docs/highscore.pdf" title="HighScores Certificate"></iframe>
+                    </div>
+                    <div class="endorsement-info">
+                        <h3>📝 HighScores SAT/ACT Prep</h3>
+                        <p>SAT/ACT Prep Intern</p>
+                        <p class="endorsement-details">Summer 2024</p>
+                        <a href="https://drive.google.com/file/d/1QP3uEFwRDO48ylq51WbGxD3Lv3ElAqWH/view?usp=sharing" target="_blank" class="endorsement-link">View Endorsement →</a>
+                    </div>
+                </div>
+                <div class="endorsement-card">
+                    <div class="endorsement-preview">
+                        <iframe src="https://drive.google.com/file/d/1YlsgDpNNxXvdfmDph7lAoO8nVzGg6KtX/preview" title="DreamerZone Certificate"></iframe>
+                    </div>
+                    <div class="endorsement-info">
+                        <h3>🤖 DreamerZone Robotics</h3>
+                        <p>Robotics Mentor - VEX Programming & Design</p>
+                        <p class="endorsement-details">20+ hours | 2025 - Present</p>
+                        <a href="https://drive.google.com/file/d/1YlsgDpNNxXvdfmDph7lAoO8nVzGg6KtX/view?usp=sharing" target="_blank" class="endorsement-link">View Endorsement →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Certificates</h2>
+            <p class="section-intro">Professional development and learning certificates.</p>
+            <div class="endorsements-grid">
+                <div class="endorsement-card">
+                    <div class="endorsement-preview">
+                        <img src="docs/genai_certificate.jpg" alt="Generative AI Certificate" />
+                    </div>
+                    <div class="endorsement-info">
+                        <h3>🎓 What is Generative AI?</h3>
+                        <p>LinkedIn Learning Certificate</p>
+                        <p class="endorsement-details">Topics: Generative AI tools, AI, Gen AI</p>
+                        <a href="https://drive.google.com/file/d/1I_wjLQOVgKE2ONdg6lnCX2XWfY9drOxT/view?usp=sharing" target="_blank" class="endorsement-link">View Certificate →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities & Skills Section -->
+    <section id="activities" class="section">
+        <div class="container">
+            <h2 class="section-title">Activities & Skills</h2>
+            <div class="activities-grid">
+                <div class="activity-card">
+                    <h3>🎤 <a href="https://ivydebate.com/cumming-suwanee/" target="_blank"></a>Debate & Mentorship</a></h3>
+                    <ul>
+                        <li>Regional competitor</li>
+                        <li>State-level judge</li>
+                    </ul>
+                </div>
+                <div class="activity-card">
+                    <h3>🔬 Science Olympiad</h3>
+                    <ul>
+                        <li>Code Analysis</li>
+                        <li>Code Busters</li>
+                        <li>Chemistry</li>
+                        <li>Entomology</li>
+                        <li>Astronomy</li>
+                    </ul>
+                </div>
+                <div class="activity-card">
+                    <h3>🎹 Music</h3>
+                    <ul>
+                        <li>Piano (8+ years, 7+ recitals)</li>
+                        <li>Vocal training</li>
+                        <li>Clarinet</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>💻 Software Skills</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">AI Concepts</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">SCSS</span>
+                        <span class="skill-tag">Website Development</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>🎨 Design</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Canva</span>
+                        <span class="skill-tag">Figma</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>🔧 Hardware Skills</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Electrical Wiring</span>
+                        <span class="skill-tag">Soldering</span>
+                        <span class="skill-tag">Breadboarding</span>
+                        <span class="skill-tag">Microcontroller Programming</span>
+                        <span class="skill-tag">Schematics</span>
+                        <span class="skill-tag">PCB Design</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>🎯 Soft Skills</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Public Speaking</span>
+                        <span class="skill-tag">Leadership</span>
+                        <span class="skill-tag">Troubleshooting</span>
+                        <span class="skill-tag">Analytical Thinking</span>
+                        <span class="skill-tag">Mentorship</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-content">
+                <p class="contact-intro">Want to collaborate on a project, chat about tech, or just say hi? I'd love to hear from you! 💬</p>
+                <div class="contact-methods">
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-label">Location</div>
+                        <div class="contact-value">Suwanee, GA 30024</div>
+                    </div>
+                    <a href="mailto:sakthi.prasan@gmail.com" class="contact-card">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-label">Email</div>
+                        <div class="contact-value">sakthi.prasan@gmail.com</div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sakthi-prasanna-5a726828b/" target="_blank" class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </div>
+                        <div class="contact-label">LinkedIn</div>
+                        <div class="contact-value">Connect with me</div>
+                    </a>
+                    <a href="https://medium.com/@sakthi.prasan" target="_blank" class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/>
+                            </svg>
+                        </div>
+                        <div class="contact-label">Medium</div>
+                        <div class="contact-value">Read my articles</div>
+                    </a>
+                    <a href="https://github.com/aksprasan" target="_blank" class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </div>
+                        <div class="contact-label">GitHub</div>
+                        <div class="contact-value">View my projects</div>
+                    </a>
+                    <a href="https://gitlab.com/sakthi.prasan" target="_blank" class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23.546 10.93L13.067.452c-.604-.603-1.582-.603-2.188 0L8.708 2.627l2.76 2.76c.645-.215 1.379-.07 1.889.441.516.515.658 1.258.428 1.9l2.658 2.66c.645-.23 1.387-.096 1.9.428.717.717.717 1.88 0 2.598-.719.719-1.881.719-2.598 0-.539-.541-.674-1.337-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348.713.721.713 1.883 0 2.598-.719.719-1.881.719-2.598 0-.719-.719-.719-1.879 0-2.598.182-.18.387-.316.605-.406V8.835c-.217-.091-.424-.222-.605-.406-.545-.545-.676-1.342-.396-2.009L7.636 3.7.45 10.881c-.6.605-.6 1.584 0 2.189l10.48 10.477c.604.604 1.582.604 2.186 0l10.43-10.43c.605-.603.605-1.582 0-2.187"/>
+                            </svg>
+                        </div>
+                        <div class="contact-label">GitLab</div>
+                        <div class="contact-value">Explore my code</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <p>&copy; 2026 Sakthi Prabhurajan. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Resume View -->
+    <div id="resume-view" class="view-container">
+        <div class="resume-page">
+            <div class="resume-container">
+                <div class="resume-header">
+                    <div class="action-buttons">
+                        <button onclick="window.print()" class="btn-print">🖨️</button>
+                    </div>
+                    <h1>Sakthi Prabhurajan</h1>
+                    <p class="title">High School Student | Tech Enthusiast | Active Learner</p>
+                    <div class="contact-info">
+                        <span>Lambert High School, Class of 2027</span>
+                        <span>•</span>
+                        <span>Suwanee, GA 30024</span>
+                        <span>•</span>
+                        <span><a href="mailto:sakthi.prasan@gmail.com">sakthi.prasan@gmail.com</a></span>
+                    </div>
+                    <div class="contact-info">
+                        <span><a href="https://aksprasan.github.io/portfolio/index.html" target="_blank">Portfolio</a></span>
+                        <span>•</span>
+                        <span><a href="https://www.linkedin.com/in/sakthi-prasanna-5a726828b/" target="_blank">LinkedIn</a></span>
+                        <span>•</span>
+                        <span><a href="https://medium.com/@sakthi.prasan" target="_blank">Medium</a></span>
+                        <span>•</span>
+                        <span><a href="https://github.com/aksprasan" target="_blank">GitHub</a></span>
+                        <span>•</span>
+                        <span><a href="https://gitlab.com/sakthi.prasan" target="_blank">GitLab</a></span>
+                    </div>
+                </div>
+
+                <div class="resume-section">
+                    <h2>EDUCATION</h2>
+                    <div class="resume-education">
+                        <div>
+                            <h4><a href="https://lhs.forsyth.k12.ga.us/" target="_blank">Lambert High School</a></h4>
+                            <p>Suwanee, GA | Class of 2027</p>
+                        </div>
+                        <div>
+                            <h4><a href="https://www.mathschool.com/about" target="_blank">Russian School of Math</a></h4>
+                            <p>2022 – Present | Advanced mathematics (2 years ahead)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resume-section">
+                    <h2>HONORS & LEADERSHIP</h2>
+                    <div class="two-column">
+                        <div>
+                            <ul>
+                                <li><strong>Research Paper Co-Author</strong> – ISMB 2026 Conference (FASTR file format for genomic data)</li>
+                                <li><strong>FIRST Robotics World Championship Qualifier (2024)</strong></li>
+                                <li><strong>Robotics Team Officer</strong> – Strategy and Analytics Officer</li>
+                                <li><strong>Technology Student Association (TSA)</strong> – Lambert TSA Chapter President</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><strong>Lambert VT SEVA</strong> - Vice President (2025-Present)</li>
+                                <li><strong>Rec Stem</strong> - Junior Officer (2025-Present)</li>
+                                <li><strong>DayDream Hackathon</strong> - Led and organized hackathon with 150+ participants</li>
+                                <li><strong>State-Level Debate Judge</strong> – Judged 3 official Varsity tournaments (2024)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resume-section">
+                    <h2>AWARDS</h2>
+                    <div class="two-column">
+                        <div>
+                            <ul>
+                                <li><strong>President's Volunteer Service Award – Bronze (2025)</strong></li>
+                                <li><strong>President's Volunteer Service Award – Gold (2024)</strong></li>
+                                <li><strong>Creativity Award</strong> – District Championship, Robotics (2026)</li>
+                                <li><strong>Team Spirit Award</strong> – District Championship, Robotics (2026)</li>
+                                <li><strong>Innovation in Control Award</strong> – District Championship, Robotics (2026)</li>
+                                <li><strong>Innovation in Control Award</strong> – State Championship, Robotics (2026)</li>
+                                <li><strong>Industrial Design Award</strong> – District Championship, Robotics (2025)</li>
+                                <li><strong>Excellence in Engineering Award</strong> – District Championship, Robotics (2025)</li>
+                                <li><strong>Rookie All-Star Award</strong> – State Championship, Robotics (2024)</li>
+                                <li><strong>Rookie Inspiration Award</strong> – District Championship, Robotics (2024)</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><strong>Technology Student Association (TSA) State Finalist</strong> – WebMaster - 5th Place (2026)</li>
+                                <li><strong>Technology Student Association (TSA) State Top 10</strong> – Music Production & Robotics (2025)</li>
+                                <li><strong>Technology Student Association (TSA) 4th Place</strong> – Gravity Car Challenge (2024)</li>
+                                <li><strong>Technology Student Association (TSA) Top 10</strong> – Mouse Trap Car Racing (2022)</li>
+                                <li><strong>USACO 2026</strong> – Rank 1232 among 34,135 pre-college participants (Score: 861)</li>
+                                <li><strong>Top 20 Placement</strong> - Undercity Global Hackathon (2025)</li>
+                                <li><strong>Top 5 Placement</strong> - Regional Hackathons (2023 & 2024)</li>
+                                <li><strong>6th Place</strong> – Regional Debate Competition (2024)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resume-section">
+                    <h2>TECHNICAL EXPERIENCE</h2>
+                    
+                    <div class="experience-item">
+                        <h3>Python Programming & AI (2023–Present)</h3>
+                        <ul>
+                            <li>Completed full-year Python course in <a href="https://codemode.us/" target="_blank">CodeMode</a>; AI self-study</li>
+                            <li>Consistent <a href="https://github.com/aksprasan" target="_blank">GitHub</a> & <a href="https://gitlab.com/sakthi.prasan" target="_blank">GitLab</a> contributor with 300+ contributions, built and maintained 20+ projects</li>
+                            <li>Continuously exploring emerging tech and AI, published 17 technical articles on <a href="https://medium.com/@sakthi.prasan" target="_blank">Medium</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-item">
+                        <h3><a href="https://frc-events.firstinspires.org/team/9477" target="_blank">FRC Robotics Team</a> – Analytics Officer (2023–Present)</h3>
+                        <ul>
+                            <li>Competed in District, Regional, and World Championships</li>
+                            <li>Advanced to World Championships in 2024</li>
+                            <li>Advanced to Regionals quarterfinals (9th place out of 72) in 2025</li>
+                            <li>Advanced to Regionals semifinals and state level (8th place out of 75) in 2026</li>
+                            <li>Led data analytics strategy to track performance metrics and optimize robot efficiency, analyzing data from 100+ competing teams</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-item">
+                        <h3><a href="https://lhs.forsyth.k12.ga.us/extracurricular/clubs-activities" target="_blank">Technology Student Association (TSA)</a> – Lambert TSA Chapter President</h3>
+                        <ul>
+                            <li>Grew active membership by 40% through recruitment and outreach</li>
+                            <li>Leading recruitment initiatives, maintaining accurate membership records</li>
+                            <li>Engineered solutions and competed in STEM design, production, and innovation challenges at state and regional levels</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-item">
+                        <h3><a href="https://hackclub.com/" target="_blank">HackClub</a> (2023–Present)</h3>
+                        <ul>
+                            <li>Competed in over 5 hackathons</li>
+                            <li>Led and executed the 2-day <a href="https://daydream.hackclub.com/" target="_blank">DayDream Hackathon</a> at Georgia Tech for 150+ participants, managing end-to-end planning, marketing, and logistics</li>
+                            <li>Ranked Top 20 out of 500+ participants at the 3-day <a href="https://highway.hackclub.com/getting-started/overview" target="_blank">Undercity Global Hackathon</a> hosted by <a href="https://hackclub.com/" target="_blank">HackClub</a> at GitHub HQ, San Francisco</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-item">
+                        <h3><a href="https://lhs.forsyth.k12.ga.us/extracurricular/clubs-activities" target="_blank">Future Business Leaders of America (FBLA)</a> (2021–Present)</h3>
+                        <ul>
+                            <li>Active member for 5+ years, consistently participating in leadership and competitive events</li>
+                            <li>Competed in multiple competitions across Code Development, Data Analysis, and Website Design</li>
+                            <li>Developed and executed projects combining coding, data insights, and design, demonstrating innovation and teamwork</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-item">
+                        <h3><a href="https://lhs.forsyth.k12.ga.us/extracurricular/clubs-activities" target="_blank">Science Olympiad</a></h3>
+                        <ul>
+                            <li>Competed in 5+ STEM events, including Code Analysis, Code Busters, Astronomy, Entomology, and Chemistry</li>
+                            <li>Participated in regional and invitational competitions</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-item">
+                        <h3><a href="https://aksprasan.github.io/portfolio/index.html" target="_blank">Personal Portfolio Website Development</a> (2025–Present)</h3>
+                        <ul>
+                            <li>Designed and developed comprehensive portfolio website with HTML5, CSS3, and JavaScript</li>
+                            <li>Implemented responsive design, dual-view system (portfolio/resume), and dark/light theme toggle</li>
+                            <li>Deployed via GitHub Pages showcasing technical projects, endorsements, and achievements</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="resume-section">
+                    <h2>INTERNSHIPS & VOLUNTEERING</h2>
+                    
+                    <div class="experience-item">
+                        <h3>Gen AI Research Internship | <a href="https://cas.gsu.edu/profile/ashwin-ashok/" target="_blank">Georgia State University</a> | Summer 2025 - Present</h3>
+                        <ul>
+                            <li>Worked under <a href="https://www.linkedin.com/in/ashwin-ashok-12820841/" target="_blank">Prof. Ashwin Ashok</a> to create AI/ML projects</li>
+                            <li>Conducted multiple AI/ML projects under mentorship and developed an AI-powered mental health chatbot</li>
+                            <li>Demonstrated the chatbot to doctors and psychiatrists, incorporated their feedback, and refined the tool to maximize support</li>
+                            <li>The mental health chatbot helped individuals with depression and students at risk of suicidal thoughts access support and coping strategies</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-item">
+                        <h3>Web Development Intern | <a href="https://alserlab.github.io/" target="_blank">Alser Lab</a> | Summer 2025 - Present</h3>
+                        <ul>
+                            <li>Worked under <a href="https://www.linkedin.com/in/mealser/" target="_blank">Prof. Mohammed Alser</a> at <a href="https://cas.gsu.edu/profile/mohammed-alser/" target="_blank">Georgia State University</a></li>
+                            <li>Entrusted with improvements and enhancements of official Alser Lab website, handling responsibility with professionalism and exceptional attention to detail</li>
+                            <li>Contributed 50+ hours coding and debugging to enhance Alser Lab's digital platforms</li>
+                            <li>Designed, developed, and launched 3+ client-facing websites, delivering functional, user-friendly solutions</li>
+                            <li>Part of 300+ total contributions across GitHub repositories demonstrating consistent technical collaboration</li>
+                            <li>Progressed from foundational learning in HTML, CSS, and web development to building multiple functional websites with confidence and precision</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-item">
+                        <h3>ISMB (Intelligent Systems for Molecular Biology) Research Project - FASTR | 2025 - Present</h3>
+                        <ul>
+                            <li>Worked under <a href="https://www.linkedin.com/in/mealser/" target="_blank">Professor Mohammed Alser</a> at <a href="https://cas.gsu.edu/profile/mohammed-alser/" target="_blank">Georgia State University</a> to contribute to FASTR Project</li>
+                            <li><strong>Co-author in research paper describing FASTR, a new file format for genomic data</strong>, submitted to ISMB 2026 (Intelligent Systems for Molecular Biology), a premier international conference in computational biology and bioinformatics organized by the International Society for Computational Biology (ISCB)</li>
+                            <li>Built online platform for supporting encoding/decoding operations on DNA and RNA representation, requiring technical accuracy and ability to work with complex scientific data</li>
+                            <li>Contributed to web-based tools to support project functionality</li>
+                            <li>Assisted in translating technical concepts into accessible website components</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-item">
+                        <h3>Python Tutor | <a href="https://codemode.us/" target="_blank">CodeMode</a> | Summer 2024</h3>
+                        <ul>
+                            <li>Tutored beginners in core Python programming concepts</li>
+                            <li>Created instructional materials and guided Q&A/debugging sessions</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-item">
+                        <h3>SAT/ACT Prep Intern | <a href="https://highscores.ai/" target="_blank">HighScores</a> | Summer 2024</h3>
+                        <ul>
+                            <li>Reviewed test materials; tutored students on Math and English Skills</li>
+                            <li>Worked daily on fixing practice tests for students</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-item">
+                        <h3><a href="https://www.vtsworld.org/branch/atlanta" target="_blank">VT Seva</a> Volunteer | Vice President | 300+ hours (2024–Present)</h3>
+                        <ul>
+                            <li><strong>Awarded President's Volunteer Service Award - Gold Level (2024) and Bronze Level (2025)</strong> for sustained volunteer service totaling 100+ hours each year</li>
+                            <li>Volunteered 200+ hours supporting visually impaired children at Nethra Vidyalay, India</li>
+                            <li>Organized 45+ events, including road cleanups, food service, assisting senior homes and senior citizens, school support, bird house projects, and multiple fundraising initiatives</li>
+                            <li>Led a campaign requiring $1/day per child, successfully raising $1,500 to provide food, clothing, shelter, and education for 4 visually impaired children for an entire year</li>
+                            <li><strong>Converted 50+ PDFs into Braille-compatible formats</strong> over 100+ hours to support visually impaired children and adults; developed semi-automated conversion process that reduced processing time from 2-3 hours per book to under 1 hour, improving efficiency by 60-70%</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-item">
+                        <h3><a href="https://www.vtsworld.org/post/vt-seva-atlanta-books-for-africa" target="_blank">Books for Africa Project</a> (2024-Present)</h3>
+                        <ul>
+                            <li>Packaged and donated 250+ books and notebooks to underserved students in Africa, expanding access to educational resources</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-item">
+                        <h3><a href="https://www.myeyelevel.com/US/center/cummingsouth" target="_blank">Eye Level</a> | 30+ hours (Summer 2025)</h3>
+                        <ul>
+                            <li>Tutored Students in Math, English, and Writing</li>
+                            <li>Graded and Recorded 200+ booklets for students</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-item">
+                        <h3><a href="https://www.dreamerszone.org/about" target="_blank">DreamerZone Robotics</a> | 20+ hours (2025-Present)</h3>
+                        <ul>
+                            <li>Mentored 40+ middle school students to build and program a vex robot</li>
+                            <li>Counseled them through autonomous programming, mechanical design, and debugging</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="resume-section">
+                    <h2>ENDORSEMENTS</h2>
+                    <div class="two-column">
+                        <div>
+                            <h4>🏆 President's Volunteer Service Award</h4>
+                            <p style="font-size: 0.65rem; margin-bottom: 0.1rem;">Gold Level - National Recognition</p>
+                            <p style="font-size: 0.6rem; margin-bottom: 0.1rem;">300+ volunteer hours | 2024</p>
+                            <p style="font-size: 0.6rem;"><a href="https://drive.google.com/file/d/1LOXW7ovJY8stv6_o_kBKZkTxx6l71pdv/view?usp=sharing" target="_blank">View Award Certificate</a></p>
+                            
+                            <h4 style="margin-top: 0.3rem;">🔬 Alser Lab Internship</h4>
+                            <p style="font-size: 0.65rem; margin-bottom: 0.1rem;">Website Development Intern & ISMB Research Contributor</p>
+                            <p style="font-size: 0.6rem; margin-bottom: 0.1rem;">Georgia State University | Summer 2025</p>
+                            <p style="font-size: 0.6rem;"><a href="https://drive.google.com/file/d/1HkmCUO2IsYVlWa3yDt8-18Mo2d5zisru/view?usp=sharing" target="_blank">View Endorsement</a></p>
+                            
+                            <h4 style="margin-top: 0.3rem;">📚 Eye Level Learning Center</h4>
+                            <p style="font-size: 0.65rem; margin-bottom: 0.1rem;">Tutor - Math, English, and Writing</p>
+                            <p style="font-size: 0.6rem; margin-bottom: 0.1rem;">30+ hours | Summer 2025</p>
+                            <p style="font-size: 0.6rem;"><a href="https://drive.google.com/file/d/1RngkzG4pGyWiWSM0_IHjZN6SCKgpdqMi/view?usp=sharing" target="_blank">View Endorsement</a></p>
+                        </div>
+                        <div>
+                            <h4>📝 HighScores SAT/ACT Prep</h4>
+                            <p style="font-size: 0.65rem; margin-bottom: 0.1rem;">SAT/ACT Prep Intern | Summer 2024</p>
+                            <p style="font-size: 0.6rem;"><a href="https://drive.google.com/file/d/1QP3uEFwRDO48ylq51WbGxD3Lv3ElAqWH/view?usp=sharing" target="_blank">View Endorsement</a></p>
+                            
+                            <h4 style="margin-top: 0.3rem;">🤖 DreamerZone Robotics</h4>
+                            <p style="font-size: 0.65rem; margin-bottom: 0.1rem;">Robotics Mentor - VEX Programming</p>
+                            <p style="font-size: 0.6rem; margin-bottom: 0.1rem;">20+ hours | 2025 - Present</p>
+                            <p style="font-size: 0.6rem;"><a href="https://drive.google.com/file/d/1YlsgDpNNxXvdfmDph7lAoO8nVzGg6KtX/view?usp=sharing" target="_blank">View Endorsement</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resume-section">
+                    <h2>CERTIFICATES</h2>
+                    <div class="two-column">
+                        <div>
+                            <h4>🎓 What is Generative AI?</h4>
+                            <p style="font-size: 0.65rem; margin-bottom: 0.1rem;">LinkedIn Learning Certificate</p>
+                            <p style="font-size: 0.6rem; margin-bottom: 0.1rem;">Topics: Generative AI tools, AI, Gen AI</p>
+                            <p style="font-size: 0.6rem;"><a href="https://drive.google.com/file/d/1I_wjLQOVgKE2ONdg6lnCX2XWfY9drOxT/view?usp=sharing" target="_blank">View Certificate</a></p>
+                        </div>
+                        <div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resume-section">
+                    <h2>ACTIVITIES & SKILLS</h2>
+                    <div class="two-column">
+                        <div>
+                            <h4><a href="https://ivydebate.com/cumming-suwanee/" target="_blank">Debate & Mentorship</a></h4>
+                            <ul>
+                                <li>Regional competitor, State-level judge</li>
+                            </ul>
+                            
+                            <h4>Science Olympiad</h4>
+                            <ul>
+                                <li>Code Analysis, Code Busters, Chemistry, Entomology, Astronomy</li>
+                            </ul>
+                            
+                            <h4>Music</h4>
+                            <ul>
+                                <li>Piano (8+ years, 7+ recitals)</li>
+                                <li>Vocal training, Clarinet</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4>Software Skills</h4>
+                            <ul>
+                                <li>Python, AI Concepts, JavaScript, C++, HTML, CSS, SCSS, Website Development</li>
+                            </ul>
+                            
+                            <h4>Design</h4>
+                            <ul>
+                                <li>Canva, Figma</li>
+                            </ul>
+                            
+                            <h4>Hardware Skills</h4>
+                            <ul>
+                                <li>Electrical Wiring, Soldering, Breadboarding, Microcontroller programming, Schematics, PCB Design</li>
+                            </ul>
+                            
+                            <h4>Soft Skills</h4>
+                            <ul>
+                                <li>Public Speaking, Leadership, Troubleshooting, Analytical Thinking, Mentorship</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js?v=1.5"></script>
+    <!-- Cache buster: 2026-01-18-v5 -->
+</body>
+</html>
